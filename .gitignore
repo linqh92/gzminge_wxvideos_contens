@@ -11,3 +11,6 @@ Thumbs.db
 *.temp
 *.swp
 ~$*
+
+# Local API credentials
+JustOneAPI-token.txt
