@@ -18,7 +18,7 @@
 
 1. 每条灵感建立一篇笔记，保存至 财税视频号内容库/03-选题规划/灵感库/YYYY/YYYY-MM/。
 2. 文件名使用 YYYY-MM-DD｜简短名称.md；简短名称描述材料中可识别的场景，不直接照搬竞品标题。无法判断场景时，使用“待分析灵感”加序号。
-3. Frontmatter 固定记录 title、tags、source_type、status、created 和 updated；初始 status 一律为“待分析”。
+3. Frontmatter 固定记录 title、tags、status、created 和 updated；初始 status 一律为“待分析”。不记录来源文件、文件路径或其他文件来源信息。
 4. 每篇笔记只保存本次用户提供的文字原文、图片文字提取结果和明确给出的备注；不补充目标客户、主题、业务线、服务关联、结论或选题建议。
 5. 选题灵感收集.md 仅作为索引和模板说明，不保存多条灵感正文。
 
@@ -30,7 +30,6 @@ title: "灵感｜简短名称"
 aliases: []
 tags:
   - "视频号/灵感"
-source_type: "用户录入"
 status: "待分析"
 created: "YYYY-MM-DD"
 updated: "YYYY-MM-DD"
