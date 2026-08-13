@@ -1,0 +1,4 @@
+interface:
+  display_name: "财税视频号文案生成"
+  short_description: "根据已确定选题生成合规、可读的视频号正式文案"
+  default_prompt: "使用 $video-copywriting 根据我已确认的选题，输出视频号标题和正式文案。"

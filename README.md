@@ -1,16 +1,12 @@
 # 广州敏哥聊财税｜视频号内容生产库
 
-## 项目维护规则
-
-- [GitHub 同步提交规则](GitHub-同步提交规则.md)：用户明确要求同步、提交或 push 到 GitHub 时的唯一执行规则。
-
-本仓库用于管理“广州敏哥聊财税”微信视频号的内容资产与生产流程：收集灵感、生成选题、撰写文案、确认发布、归档复盘。
+本仓库以“项目 Agent → 专项 Skills → 内容知识库”组织“广州敏哥聊财税”微信视频号的内容资产与生产流程。
 
 内容围绕账号定位、真实经营场景与可承接的财税服务展开，重点服务电商经营者及中小企业老板。
 
-## 从哪里开始
+## 项目架构与使用入口
 
-根据当前需求选择一个入口：
+项目级规则由 [AGENTS.md](AGENTS.md) 管理；运营 Agent 位于 [.codex/agents/video-account-operator.toml](.codex/agents/video-account-operator.toml)，负责理解意图、识别阶段与调度 Skill。根据当前需求选择一个 Skill：
 
 - 要保存同行文案、图片文字或自己的想法：录入灵感。
 - 要获得可选选题：发起选题需求。
@@ -27,16 +23,16 @@
 | 选题规划 | 灵感库、候选选题与各业务方向选题池 | `财税视频号内容库/03-选题规划/` |
 | 内容复盘 | 重复选题检查、内容缺口与定位变化记录 | `财税视频号内容库/04-内容复盘/` |
 | 内容素材 | 标题、案例、风险场景、政策资料等写作素材 | `财税视频号内容库/05-内容素材库/` |
-| 流程模块 | 灵感录入、选题、文案、发布归档等可复用流程 | `.codex/skills/daily-video-account-planning/` |
+| Skill 模块 | 灵感录入、选题规划、文案生成、发布归档等可复用能力 | `.codex/skills/` |
 
-工作流总入口为 [SKILL.md](.codex/skills/daily-video-account-planning/SKILL.md)，它会根据用户当前动作调用对应模块：
+四个专项 Skill 各自只执行当前阶段，不自动进入下一阶段：
 
 | 场景 | 流程说明 |
 | --- | --- |
-| 录入灵感 | [灵感采集流程](.codex/skills/daily-video-account-planning/references/idea-intake-workflow.md) |
-| 获取选题 | [选题流程](.codex/skills/daily-video-account-planning/references/topic-selection-workflow.md) 与 [内容库读取说明](.codex/skills/daily-video-account-planning/references/obsidian-history-vault.md) |
-| 撰写文案 | [文案生成指南](.codex/skills/daily-video-account-planning/references/original-copywriting-guide.md) |
-| 发布归档 | [发布与归档流程](.codex/skills/daily-video-account-planning/references/publish-and-archive-workflow.md) 与 [历史内容归档规范](财税视频号内容库/00-首页与维护规则/历史内容归档规范.md) |
+| 录入灵感 | [idea-intake](.codex/skills/idea-intake/SKILL.md) |
+| 获取选题 | [topic-planning](.codex/skills/topic-planning/SKILL.md) 与 [历史内容库读取规则](.codex/skills/topic-planning/references/history-vault-rules.md) |
+| 撰写文案 | [video-copywriting](.codex/skills/video-copywriting/SKILL.md) |
+| 发布归档 | [publish-archive](.codex/skills/publish-archive/SKILL.md) 与 [历史内容归档规范](财税视频号内容库/00-首页与维护规则/历史内容归档规范.md) |
 
 ## 主流程
 

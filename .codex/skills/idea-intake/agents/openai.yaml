@@ -1,0 +1,4 @@
+interface:
+  display_name: "灵感录入"
+  short_description: "将参考内容、图片文字或想法保存为独立灵感笔记"
+  default_prompt: "使用 $idea-intake 将我提供的内容录入灵感库，不进行分析或生成选题。"

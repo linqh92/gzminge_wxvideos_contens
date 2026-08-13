@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频号选题规划"
+  short_description: "基于账号定位和内容库输出 5 个不重复选题"
+  default_prompt: "使用 $topic-planning 基于当前历史内容、内容地图、选题池和灵感库，提供 5 个视频号选题方案。"
